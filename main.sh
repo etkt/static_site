@@ -13,6 +13,8 @@ else
 fi
 
 # Start the server
-if [ "$1" = "serve" ]; then
-  python3 -m http.server 8888 --directory public
-fi
+#if [ "$1" = "serve" ]; then
+ # python3 -m http.server 8888 --directory public
+#fi 
+
+cd public && python3 -m http.server 8888
