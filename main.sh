@@ -3,10 +3,10 @@ python3 src/main.py
 
 
 # Check if public directory was created
-if [ -d "public" ]; then
+if [ -d "docs" ]; then
     echo "Public directory created successfully"
-    echo "Contents of public:"
-    ls -la public
+    echo "Contents of public directory:"
+    ls -la docs
 else
     echo "ERROR: Public directory was not created"
     exit 1
@@ -17,4 +17,4 @@ fi
  # python3 -m http.server 8888 --directory public
 #fi 
 
-cd public && python3 -m http.server 8888
+cd docs && python3 -m http.server 8888
